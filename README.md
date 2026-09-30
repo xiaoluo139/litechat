@@ -9,6 +9,23 @@
 基于 [Jev 聊天助手](https://github.com/jev-chat/jev-chat-jarvis)（MIT）二次开发的简化版，
 详见 [NOTICE](NOTICE)。
 
+**源码仓库**：<https://github.com/xiaoluo139/litechat>
+
+## 下载（推荐）
+
+不用自己编译，直接下装好的包：
+
+**<https://github.com/xiaoluo139/litechat/releases/latest>**
+
+| 平台 | 下载文件 | 系统要求 |
+|---|---|---|
+| 安卓手机 | `LiteChat-Android-v1.25.apk` | Android 11+（ARM64 / 32 位 ARM） |
+| Windows 电脑（安装版） | `LiteChat-Setup-Windows-v1.25.exe` | Windows 10 / 11 · 64 位 |
+| Windows 电脑（免安装） | `LiteChat-Windows-portable-v1.25.zip` | 解压即用 |
+
+装完第一次打开，只需要在「接口设置」里填**你自己的大模型 API**（地址 + 密钥 + 模型名），
+不用注册、不用登录，也没有内置的服务端。
+
 ---
 
 ## 一、安装包（v1.25，已跑过测试）
@@ -19,7 +36,8 @@
 | Windows 电脑 | `dist/LiteChat-Setup-Windows-v1.25.exe` | 6.6 MB | Windows 10 / 11 · 64 位 |
 | Windows 免安装 | `dist/LiteChat-Windows-portable-v1.25.zip` | 9.2 MB | 解压即用 |
 
-旧版本留在 `dist/previous/` 里，正常用不到。
+`dist/` 是**自己从源码打包**时生成的位置（打包脚本见第二十一节），仓库里不存二进制，
+发布出去的包都在上面的 Release 页面。旧版本留在 `dist/previous/` 里，正常用不到。
 
 - **安卓**：把 APK 传到手机点安装（需在系统里允许「安装未知来源应用」）。
 - **Windows**：双击安装包，装到 `%LOCALAPPDATA%\LiteChat`，**不需要管理员权限**，

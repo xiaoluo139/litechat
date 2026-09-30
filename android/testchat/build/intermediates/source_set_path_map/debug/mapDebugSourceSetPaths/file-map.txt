@@ -1,7 +1,0 @@
-com.litechat.testchat-pngs-0 F:\APP\JAV\litechat\android\testchat\build\generated\res\pngs\debug
-com.litechat.testchat-resValues-1 F:\APP\JAV\litechat\android\testchat\build\generated\res\resValues\debug
-com.litechat.testchat-packageDebugResources-2 F:\APP\JAV\litechat\android\testchat\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.litechat.testchat-packageDebugResources-3 F:\APP\JAV\litechat\android\testchat\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.litechat.testchat-debug-4 F:\APP\JAV\litechat\android\testchat\build\intermediates\merged_res\debug\mergeDebugResources
-com.litechat.testchat-debug-5 F:\APP\JAV\litechat\android\testchat\src\debug\res
-com.litechat.testchat-main-6 F:\APP\JAV\litechat\android\testchat\src\main\res
