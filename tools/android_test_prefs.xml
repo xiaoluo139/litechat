@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!--
+  Config for the Android build on an emulator, pointed at the mock model API
+  running on the PC. Push it with (see docs/verification/README.md):
+
+    adb push tools/android_test_prefs.xml /data/local/tmp/litechat_assistant.xml
+    adb shell am force-stop com.litechat.app
+    adb shell run-as com.litechat.app mkdir -p shared_prefs
+    adb shell "run-as com.litechat.app cp /data/local/tmp/litechat_assistant.xml \
+        shared_prefs/litechat_assistant.xml"
+
+  10.0.2.2 is the emulator's alias for the host machine. The key is the mock
+  server's throwaway key - a real key never goes in a file like this.
+
+  skill_id=goutoujunshi pre-selects the 军师 skill so the button state can be
+  checked on launch; delete that line to start on 通用.
+-->
+<map>
+    <string name="provider_id">custom</string>
+    <string name="protocol">openai</string>
+    <string name="base_url">http://10.0.2.2:8765/v1</string>
+    <string name="api_key">sk-test</string>
+    <string name="model">test-model</string>
+    <string name="relationship">对方是我的老板，我在他手下做项目</string>
+    <string name="skill_id">goutoujunshi</string>
+    <boolean name="enabled" value="true" />
+    <boolean name="auto_analyze" value="true" />
+    <boolean name="ocr_fallback" value="true" />
+    <boolean name="ocr_auto_analyze" value="true" />
+    <boolean name="generic_chat_detection" value="true" />
+    <boolean name="wechat_enabled" value="true" />
+</map>

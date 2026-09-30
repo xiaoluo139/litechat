@@ -1,0 +1,44 @@
+LiteChat 轻聊助手
+Copyright (c) 2026 LiteChat contributors
+
+This project is a simplified derivative of Jev Chat Assistant. It reuses and
+adapts that project's non-invasive capture layer (Android accessibility-service
+adapters, the screenshot + on-device OCR fallback, the floating overlay shell
+and the guarded input writer). Everything else — the single-API configuration,
+the universal multi-protocol LLM client, the single-call prompt, the Windows
+desktop application and the packaging — is original to this project.
+
+---
+
+Jev 聊天助手 (Jev Chat Assistant)
+Copyright (c) 2026 Finderchangchang and the jev-chat contributors
+https://github.com/jev-chat/jev-chat-jarvis · https://chatjevs.com
+
+本项目以 MIT 协议开源（见 LICENSE）。
+
+- 允许个人和商业使用、修改、再分发、集成到自有产品中，无需付费或事先授权。
+- 分发或商用时，必须保留 LICENSE 与本 NOTICE 文件，并在产品的「关于」页、
+  说明文档或发布页中注明出处。
+- 不得使用「Jev 聊天助手」「jev-chat」名称或官网域名暗示由原作者出品或背书。
+
+This project is licensed under the MIT License (see LICENSE).
+Commercial use, modification and redistribution are permitted. When you
+distribute or commercialize this software or a derivative, keep the LICENSE
+and this NOTICE, and credit the source, e.g. "Based on Jev Chat Assistant
+(https://github.com/jev-chat/jev-chat-jarvis)". Do not use the project name
+or domain to imply endorsement by the original authors.
+
+---
+
+狗头军师 / Goutou Junshi skill
+Copyright (c) 2026 powerycy
+https://github.com/powerycy/goutoujunshi
+
+The optional "军师" reply skill — its SKILL.md, its 43 reference documents and
+its whole prompt — comes from that project unchanged, and is redistributed
+here under the MIT License. The original LICENSE ships next to the skill
+(`skills/goutoujunshi/LICENSE` in the desktop package,
+`assets/skills/goutoujunshi/LICENSE` inside the APK) and its terms apply to
+those files. The skill is off until the user taps the 军师 button; it is a
+communication advisor, not a diagnostic or a way to manipulate anyone, and
+its security boundaries are reproduced verbatim in the prompt.

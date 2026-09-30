@@ -1,0 +1,40 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.litechat.testchat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="35" />
+10
+11    <application
+11-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:3:5-13:19
+12        android:allowBackup="false"
+12-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:4:9-36
+13        android:debuggable="true"
+14        android:extractNativeLibs="false"
+15        android:label="测试聊天"
+15-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:5:9-29
+16        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+16-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:6:9-72
+17        <activity
+17-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:7:9-12:20
+18            android:name="com.litechat.testchat.MainActivity"
+18-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:7:19-47
+19            android:exported="true" >
+19-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:7:48-71
+20            <intent-filter>
+20-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:8:13-11:29
+21                <action android:name="android.intent.action.MAIN" />
+21-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:9:17-69
+21-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:9:25-66
+22
+23                <category android:name="android.intent.category.LAUNCHER" />
+23-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:10:17-77
+23-->F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:10:27-74
+24            </intent-filter>
+25        </activity>
+26    </application>
+27
+28</manifest>

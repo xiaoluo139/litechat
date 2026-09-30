@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:2:1-14:12
+	package
+		INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:3:5-13:19
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:3:5-13:19
+	android:extractNativeLibs
+		INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+	android:label
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:5:9-29
+	android:allowBackup
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:4:9-36
+	android:theme
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:6:9-72
+activity#com.litechat.testchat.MainActivity
+ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:7:9-12:20
+	android:exported
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:7:48-71
+	android:name
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:7:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:8:13-11:29
+action#android.intent.action.MAIN
+ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:9:17-69
+	android:name
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:9:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:10:17-77
+	android:name
+		ADDED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml:10:27-74
+uses-sdk
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\APP\JAV\litechat\android\testchat\src\main\AndroidManifest.xml

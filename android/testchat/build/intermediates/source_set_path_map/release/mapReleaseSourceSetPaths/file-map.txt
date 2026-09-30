@@ -1,0 +1,7 @@
+com.litechat.testchat-pngs-0 F:\APP\JAV\litechat\android\testchat\build\generated\res\pngs\release
+com.litechat.testchat-resValues-1 F:\APP\JAV\litechat\android\testchat\build\generated\res\resValues\release
+com.litechat.testchat-packageReleaseResources-2 F:\APP\JAV\litechat\android\testchat\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.litechat.testchat-packageReleaseResources-3 F:\APP\JAV\litechat\android\testchat\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.litechat.testchat-release-4 F:\APP\JAV\litechat\android\testchat\build\intermediates\merged_res\release\mergeReleaseResources
+com.litechat.testchat-main-5 F:\APP\JAV\litechat\android\testchat\src\main\res
+com.litechat.testchat-release-6 F:\APP\JAV\litechat\android\testchat\src\release\res
