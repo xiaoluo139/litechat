@@ -184,7 +184,7 @@ decide(v3) screenRead=true autoAnalyze=true latest=other auto=true
 answered in 2758 ms skill=general noThinking=true
 ```
 
-![安卓 16 新消息自动出候选](F:\APP\JAV\litechat\docs\verification\android-34-v1.17-android16-newmsg.png)
+![安卓 16 新消息自动出候选](docs/verification/android-34-v1.17-android16-newmsg.png)
 
 面板给出：意图「老板承诺明天上午给材料」、建议「明天上午收到材料后尽快反馈」、
 候选「好的，明天上午收到后我马上处理」「收到，我明天上午等你材料，下午给你反馈」。
@@ -422,17 +422,17 @@ Windows 的识别器会把整行丢掉 —— 实测在某个像素上就会发�
 
 实测（模拟器，往配置里灌 12 个垃圾名字）：
 
-![手机端名单上限](F:\APP\JAV\litechat\docs\verification\android-51-v1.24-name-cap.png)
-![名单 + 清空按钮](F:\APP\JAV\litechat\docs\verification\android-52-v1.24-name-cap-clear.png)
-![清空后](F:\APP\JAV\litechat\docs\verification\android-53-v1.24-name-cleared.png)
+![手机端名单上限](docs/verification/android-51-v1.24-name-cap.png)
+![名单 + 清空按钮](docs/verification/android-52-v1.24-name-cap-clear.png)
+![清空后](docs/verification/android-53-v1.24-name-cleared.png)
 
 界面只列出 6 个 + 「清空这个名单」；点一下 → 名单清空、提示"还没读到过会话名：打开一个
 聊天，程序读一次就会出现在这里"，`run-as` 读回的 `known_conversations` 也是空的。
 
 电脑端（同一份 `litechat_win.py`，真机上打开的对话框）：
 
-![电脑端选择对话人](F:\APP\JAV\litechat\docs\verification\windows-01-v1.24-picker-clear.png)
-![清空后](F:\APP\JAV\litechat\docs\verification\windows-02-v1.24-picker-cleared.png)
+![电脑端选择对话人](docs/verification/windows-01-v1.24-picker-clear.png)
+![清空后](docs/verification/windows-02-v1.24-picker-cleared.png)
 
 回归：Windows 单测 **86 个全绿**（新增"清空之后不留残余"1 个）、安卓单测 **115 个全绿**、
 8 套电脑端设备脚本全 PASS（延迟中位 **0.52 秒**）；v1.24 安装包 `/S` 静默安装后
@@ -478,13 +478,13 @@ came back on its own after 0.1 s (137x137)
 overlay self-heal: PASS
 ```
 
-![手机端浮窗](F:\APP\JAV\litechat\docs\verification\android-55-v1.25-bubble.png)
-![点开面板](F:\APP\JAV\litechat\docs\verification\android-56-v1.25-panel-opened.png)
-![浮窗菜单](F:\APP\JAV\litechat\docs\verification\android-58-v1.25-bubble-menu.png)
-![隐藏 10 分钟后](F:\APP\JAV\litechat\docs\verification\android-59-v1.25-hidden-10min.png)
-![主界面「重新显示」按钮](F:\APP\JAV\litechat\docs\verification\android-57-v1.25-home-respawn.png)
-![按一下就回来了](F:\APP\JAV\litechat\docs\verification\android-60-v1.25-respawned.png)
-![新消息到达后出候选](F:\APP\JAV\litechat\docs\verification\android-61-v1.25-candidates.png)
+![手机端浮窗](docs/verification/android-55-v1.25-bubble.png)
+![点开面板](docs/verification/android-56-v1.25-panel-opened.png)
+![浮窗菜单](docs/verification/android-58-v1.25-bubble-menu.png)
+![隐藏 10 分钟后](docs/verification/android-59-v1.25-hidden-10min.png)
+![主界面「重新显示」按钮](docs/verification/android-57-v1.25-home-respawn.png)
+![按一下就回来了](docs/verification/android-60-v1.25-respawned.png)
+![新消息到达后出候选](docs/verification/android-61-v1.25-candidates.png)
 
 回归：Windows 单测 **86 个全绿**（新增"清空之后不留残余"1 个）、安卓单测 **122 个全绿**
 （新增 `OverlayLivenessTest` 7 个：什么时候该把浮窗放回来）、8 套电脑端设备脚本全 PASS
