@@ -86,8 +86,6 @@ PROTOCOL_IDS = [PROTOCOL_OPENAI, PROTOCOL_ANTHROPIC, PROTOCOL_GEMINI]
 # (id, label, protocol, base url, default model)
 PROVIDERS = [
     ("deepseek", "DeepSeek 深度求索", PROTOCOL_OPENAI, "https://api.deepseek.com/v1", "deepseek-chat"),
-    ("longcat", "LongCat 龙猫（美团）", PROTOCOL_OPENAI,
-     "https://api.longcat.chat/openai/v1", "LongCat-2.0"),
     ("dashscope", "通义千问（阿里云百炼）", PROTOCOL_OPENAI,
      "https://dashscope.aliyuncs.com/compatible-mode/v1", "qwen-plus"),
     ("zhipu", "智谱 GLM", PROTOCOL_OPENAI, "https://open.bigmodel.cn/api/paas/v4", "glm-4-flash"),
@@ -120,6 +118,11 @@ PROVIDERS = [
 
 PROVIDER_BY_ID = {p[0]: p for p in PROVIDERS}
 PROVIDER_LABELS = [p[1] for p in PROVIDERS]
+
+# Where an unknown stored provider id lands. A preset that a later version
+# stopped shipping (the config still names it) means "the user's own endpoint",
+# so the dropdown shows 自定义 instead of pretending it is some other vendor.
+CUSTOM_INDEX = next(i for i, p in enumerate(PROVIDERS) if p[0] == "custom")
 
 
 def build_endpoint(protocol: str, base_url: str, model: str) -> str:
@@ -2513,7 +2516,7 @@ class SettingsWindow:
         widget.pack(fill="x")
         if key == "providerId":
             idx = next((i for i, p in enumerate(PROVIDERS)
-                        if p[0] == self.cfg.get("providerId")), 0)
+                        if p[0] == self.cfg.get("providerId")), CUSTOM_INDEX)
         else:
             idx = PROTOCOL_IDS.index(self.cfg.get("protocol", PROTOCOL_OPENAI))
         widget.current(idx)

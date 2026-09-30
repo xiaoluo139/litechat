@@ -35,8 +35,6 @@ object LlmPresets {
             "https://api.openai.com/v1", "gpt-4o-mini"),
         LlmPreset("deepseek", "DeepSeek 深度求索", PROTOCOL_OPENAI,
             "https://api.deepseek.com/v1", "deepseek-chat"),
-        LlmPreset("longcat", "LongCat 龙猫（美团）", PROTOCOL_OPENAI,
-            "https://api.longcat.chat/openai/v1", "LongCat-2.0"),
         LlmPreset("dashscope", "通义千问（阿里云百炼）", PROTOCOL_OPENAI,
             "https://dashscope.aliyuncs.com/compatible-mode/v1", "qwen-plus"),
         LlmPreset("zhipu", "智谱 GLM", PROTOCOL_OPENAI,
@@ -79,7 +77,18 @@ object LlmPresets {
 
     val default: LlmPreset = all.first { it.id == "deepseek" }
 
-    fun byId(id: String?): LlmPreset = all.firstOrNull { it.id == id } ?: default
+    /** The entry whose address / key / model the user fills in themselves. */
+    val custom: LlmPreset = all.first { it.id == "custom" }
+
+    /**
+     * The preset behind a stored provider id.
+     *
+     * An id this build no longer ships - a preset that was removed in a later
+     * version - falls back to 自定义 and not to some other vendor. The saved
+     * base URL, key and model are the user's own either way, and labelling that
+     * endpoint "DeepSeek" would be a lie the moment the settings page opens.
+     */
+    fun byId(id: String?): LlmPreset = all.firstOrNull { it.id == id } ?: custom
 
     /** Labels for the settings dropdown, in the same order as [all]. */
     val labels: List<String> = all.map { it.label }

@@ -23,13 +23,14 @@ MOCK = {
 }
 
 PLAIN = {
-    # The preset the user actually runs. The key is deliberately left blank:
-    # a script never writes an API key anywhere.
-    "providerId": "longcat",
+    # A neutral restore: the app's own default preset, pointing at DeepSeek's
+    # public endpoint. The key is deliberately left blank - a script never
+    # writes an API key anywhere.
+    "providerId": "deepseek",
     "protocol": "openai",
-    "baseUrl": "https://api.longcat.chat/openai/v1",
+    "baseUrl": "https://api.deepseek.com/v1",
     "apiKey": "",
-    "model": "LongCat-2.0",
+    "model": "deepseek-chat",
     "relationship": "对方是我的老板",
     "pinnedTarget": {"title": "微信", "cls": "Qt51514QWindowIcon"},
 }

@@ -4,22 +4,18 @@
 
 > **关于截图文件**：v1.14 之前的 PNG 在一次误删工作目录的事故里丢了，
 > 文字记录（命令、日志、数字）都还在，下面表格里那些旧文件名点不开。
-> 目前目录里实际存在的截图是 v1.12 之后的这几张：
-> `windows-12-v1.12-rebuilt-installer.png`、`windows-13-v1.13-longcat.png`、
-> `windows-14-v1.14-oneperson-longcat.png`、`windows-15-v1.15-installed-longcat.png`、
-> `android-27-v1.13-partner-row-on-empty-panel.png`、`android-28-v1.13-partner-picker.png`、
-> `android-29-v1.15-release-home.png`、`android-30-v1.15-longcat-analysis.png`、
-> `android-31-v1.16-longcat-analysis.png`、`android-32-v1.16-release-home.png`、
-> `android-33-v1.17-android16-analysis.png`、`android-34-v1.17-android16-newmsg.png`、
-> `android-35-v1.17-android16-release-home.png`、`android-36-v1.18-android16-release-home.png`、
-> `android-37-v1.18-switch-immediate.png`、`android-38-v1.18-pinned-elsewhere.png`、
-> `android-39-v1.18-picker-holds.png`、`android-40-v1.18-picker-back.png`、
-> `android-41-v1.19-home-picker.png`、`android-42-v1.19-panel-button.png`、
-> `android-43-v1.19-switch-3s.png`、`android-44-v1.19-android16-release-home.png`、
-> `android-45-v1.20-wechat-ocr-off.png`、`android-46-v1.20-android16-release-home.png`、
-> `android-49/50-v1.24-name-*.png`、`android-51/52/53-v1.24-name-*.png`、
+>
+> **按作者要求，画面上带「测试聊天窗口」（那台假微信界面的测试 App）的截图已经全部
+> 从仓库里移除** —— 下面正文里还会提到它们（当时的验收记录），但文件名已经点不开了，
+> 需要时可以按 commit 从历史里取回。
+>
+> 目前目录里实际存在的截图是这些（都只含本软件自己的界面）：
 > `windows-01/02-v1.24-picker-*.png`、`windows-03-v1.24-installed-app.png`、
-> `android-54 ~ android-62-v1.25-*.png`。
+> `windows-04-v1.25-installed-app.png`、`windows-12-v1.12-rebuilt-installer.png`、
+> `android-29-v1.15-release-home.png`、`android-32-v1.16-release-home.png`、
+> `android-35/36/44/46-v1.1x-android16-release-home.png`、
+> `android-41-v1.19-home-picker.png`、`android-49/50-v1.24-name-*.png`、
+> `android-51/52/53-v1.24-name-*.png`、`android-57/60-v1.25-*.png`。
 > 另外还有两张是**在用户真机（小米 24122RKC7C / Android 16 / HyperOS V816）**上拍的：
 > `android-47-v1.22-phone-paste.png`、`android-48-v1.22-paste-result.png`。
 

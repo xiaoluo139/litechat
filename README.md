@@ -184,7 +184,6 @@ decide(v3) screenRead=true autoAnalyze=true latest=other auto=true
 answered in 2758 ms skill=general noThinking=true
 ```
 
-![安卓 16 新消息自动出候选](docs/verification/android-34-v1.17-android16-newmsg.png)
 
 面板给出：意图「老板承诺明天上午给材料」、建议「明天上午收到材料后尽快反馈」、
 候选「好的，明天上午收到后我马上处理」「收到，我明天上午等你材料，下午给你反馈」。
@@ -478,13 +477,8 @@ came back on its own after 0.1 s (137x137)
 overlay self-heal: PASS
 ```
 
-![手机端浮窗](docs/verification/android-55-v1.25-bubble.png)
-![点开面板](docs/verification/android-56-v1.25-panel-opened.png)
-![浮窗菜单](docs/verification/android-58-v1.25-bubble-menu.png)
-![隐藏 10 分钟后](docs/verification/android-59-v1.25-hidden-10min.png)
 ![主界面「重新显示」按钮](docs/verification/android-57-v1.25-home-respawn.png)
 ![按一下就回来了](docs/verification/android-60-v1.25-respawned.png)
-![新消息到达后出候选](docs/verification/android-61-v1.25-candidates.png)
 
 回归：Windows 单测 **86 个全绿**（新增"清空之后不留残余"1 个）、安卓单测 **122 个全绿**
 （新增 `OverlayLivenessTest` 7 个：什么时候该把浮窗放回来）、8 套电脑端设备脚本全 PASS
@@ -826,10 +820,18 @@ reply 3: 三点见，我抓紧弄
 | 建议 | 三点前给结论带上方向 | 明确时间节点，有阶段性成果就先给 |
 | 回复 1 | 三点见，我抓紧弄 | 能给的，我抓紧两点前看完，三点前先给您个初步结论。 |
 
-### 5. 顺带：LongCat 进了服务商预设
+### 5. 顺带：加了一批国内服务商预设
 
-`LongCat 龙猫（美团）` 现在在两端的下拉里，地址 `https://api.longcat.chat/openai/v1`、
-模型 `LongCat-2.0`，选完只要粘 key。
+两端下拉里都带了常用服务商（DeepSeek、通义千问、智谱 GLM、Kimi、硅基流动、火山方舟、
+腾讯混元、MiniMax、百川、阶跃星辰、零一万物、OpenRouter、Groq、Claude、Gemini，
+以及本地 Ollama / LM Studio 和中转站），选完粘一个 key 就能用。
+
+**关于 LongCat**：早先版本里内置过一个 `LongCat 龙猫（美团）` 预设，**现在已经移除**，
+源码里不再有 `api.longcat.chat` 这个地址。这个下拉只是省事的快捷方式，任何 OpenAI 兼容
+接口都可以用「自定义」填地址 + 密钥 + 模型接到，功能上没有任何减少。老配置里如果还记着
+那个 id，界面会显示成「自定义」并**保留你原来的地址、密钥和模型**，不会覆盖。
+（已发布的 v1.25 安装包是在这次移除之前打出来的，里面还带着那个预设；从源码自行构建则
+不会有。）
 
 ## 九、v1.8：可以自己调用「狗头军师」
 
