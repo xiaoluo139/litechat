@@ -6,8 +6,10 @@
 > 发送永远由你自己按。程序只把候选回复复制到剪贴板（两端都能一键填进聊天输入框），
 > 从不自动点发送，不碰转账红包，不读别的程序的数据。
 
-基于 [Jev 聊天助手](https://github.com/jev-chat/jev-chat-jarvis)（MIT）二次开发的简化版，
-详见 [NOTICE](NOTICE)。
+**基于 [jev-chat/jarvis](https://github.com/jev-chat/jev-chat-jarvis)（Jev 聊天助手，MIT）
+开发的简化版，并集成了 [狗头军师 skill](https://github.com/powerycy/goutoujunshi)（MIT）**
+—— 前者提供了不侵入的采集层（无障碍适配、截图 + 本地 OCR、悬浮窗、输入框回填），
+后者是可选的「军师」回复技能（43 篇参考，按对话内容最多带 2 篇）。详见 [NOTICE](NOTICE)。
 
 **源码仓库**：<https://github.com/xiaoluo139/litechat>
 
